@@ -1,0 +1,18 @@
+<h1>Home Page</h1>
+<!--We use UL and LI to render the list of videos-->
+
+<p>
+    <a href="/home#/add-video">Add a Video</a>
+</p>
+<ul>
+    <li ng-repeat='video in videos'>
+        <img src="/image/{{video.title}}_tn.jpg"" alt="Smiley face" width="42" height="42"><a href="/home#/video/{{video._id}}">
+            {{video.title}}
+        </a>
+
+        <a href="/home#/video/delete/{{video._id}}">
+            <i class="glyphicon glyphicon-remove"></i>
+        </a>
+    </li>
+</ul>
+
